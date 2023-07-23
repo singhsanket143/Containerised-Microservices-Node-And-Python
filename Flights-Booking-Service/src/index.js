@@ -15,7 +15,7 @@ app.use('/api', apiRoutes);
 app.use('/bookingService/api', apiRoutes);
 
 app.get('/callingPythonservice', async (req, res) => {
-    const response = await axios.get('http://python_service:3005/home');
+    const response = await axios.get('https://fakestoreapi.com/products/1');
     console.log(response)
     return res.json({message: response.data});
 })
